@@ -1,0 +1,31 @@
+{% extends 'base.html'%} {% block content %}
+<div
+  style="
+    margin-left: 20px;
+    margin-top: 20px;
+    color: #ffffe0;
+    text-shadow: -1px -1px 0 rgba(0, 0, 0, 0.5), 1px -1px 0 rgba(0, 0, 0, 0.5),
+      -1px 1px 0 rgba(0, 0, 0, 0.5), 1px 1px 0 rgba(0, 0, 0, 0.5);
+  "
+></div>
+<div class="d-flex justify-content-center" style="margin-top: 20px">
+  <div class="col-sm-3 col-md-6">
+    <div class="card" style="margin-top: 20px; height: 400px">
+      <div class="card-body" style="background-color: #f5f5f5; color: #333333">
+        <h2 class="card-title"><b>Details:</b></h2>
+
+        <h3><b>First Name : </b>{{data.first_name}}</h3>
+
+        <h3><b>Last Name : </b>{{data.last_name}}</h3>
+
+        <h3><b>Email : </b>{{data.email}}</h3>
+
+        <h3><b>Phone : </b>{{data.phone_number}}</h3>
+
+        <h3><b>Address : </b>{{data.address}}</h3>
+        <br />
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock content %}
