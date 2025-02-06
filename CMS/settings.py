@@ -25,7 +25,10 @@ SECRET_KEY = "django-insecure-=0rpot9!j2s@we*l!kmx!pti92025=0o$i^#38$c#v8^=9!uvs
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ["*"]
+CSRF_TRUSTED_ORIGINS = [
+    "https://contact-management-system-6ea1.onrender.com"  # Use the full URL
+]
 
 
 # Application definition
